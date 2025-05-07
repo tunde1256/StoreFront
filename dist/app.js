@@ -18,5 +18,9 @@ app.use(logger_middleware_1.requestLogger);
 app.use('/api/auth', auth_routes_1.default);
 app.use('/api/categories', category_routes_1.default);
 app.use('/api/products', product_routes_1.default);
+app.get('/', (req, res) => {
+    res.send('API is running');
+});
+// Error logging
 app.use(logger_middleware_1.errorLogger);
 exports.default = app;

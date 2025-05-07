@@ -18,6 +18,11 @@ app.use('/api/auth', authRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
 
+app.get('/', (req, res) => {
+  res.send('API is running');
+});
+
+// Error logging
 app.use(errorLogger);
 
 export default app;
