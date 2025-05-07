@@ -7,7 +7,6 @@ let prisma;
   const { PrismaClient } = await import('@prisma/client');
   prisma = new PrismaClient();
 
-  // Start server here after client is ready
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
