@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { prisma } from '..//prisma/client';
+import { prisma } from '../prisma/client';
 import { logger } from '../utils/logger'; 
 
 export const createCategory = async (req: Request, res: Response): Promise<any> => {

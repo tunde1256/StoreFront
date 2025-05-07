@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getCategory = exports.listCategories = exports.deleteCategory = exports.updateCategory = exports.createCategory = void 0;
-const client_1 = require("..//prisma/client");
+const client_1 = require("../prisma/client");
 const logger_1 = require("../utils/logger");
 const createCategory = async (req, res) => {
     try {

@@ -1,64 +1,7 @@
-[2025-05-07T09:51:33.655Z] INFO: POST /api/auth/register
-[2025-05-07T09:52:51.637Z] INFO: POST /api/auth/login
-[2025-05-07T09:53:25.451Z] INFO: POST /api/auth/login
-[2025-05-07T09:57:14.718Z] INFO: POST /api/categories/create-category
-[2025-05-07T09:57:41.456Z] INFO: POST /api/categories/create-category
-[2025-05-07T09:57:41.487Z] INFO: Category created: Electronics (ID: 4)
-[2025-05-07T10:01:54.511Z] INFO: POST /api/categories/create-category
-[2025-05-07T10:01:54.546Z] INFO: Category created: Electronics (ID: 5)
-[2025-05-07T10:01:54.547Z] ERROR: Failed to create category: Cannot set headers after they are sent to the client
-[2025-05-07T10:01:54.549Z] ERROR: POST /api/categories/create-category - Cannot set headers after they are sent to the client
-[2025-05-07T10:04:35.803Z] INFO: PUT /api/categories/4
-[2025-05-07T10:04:35.855Z] INFO: Category updated: shoes (ID: 4)
-[2025-05-07T10:04:44.875Z] INFO: DELETE /api/categories/4
-[2025-05-07T10:04:44.891Z] INFO: Category deleted: ID 4
-[2025-05-07T10:05:00.704Z] INFO: DELETE /api/categories/
-[2025-05-07T10:05:14.311Z] INFO: GET /api/categories/
-[2025-05-07T10:05:14.314Z] INFO: Fetched 4 categories
-[2025-05-07T10:13:05.735Z] INFO: GET /api/categories/
-[2025-05-07T10:13:16.244Z] INFO: GET /api/categories/list
-[2025-05-07T10:13:16.246Z] INFO: Fetching category with ID list...
-[2025-05-07T10:13:16.281Z] ERROR: Failed to fetch category with ID list: 
-Invalid `prisma.category.findUnique()` invocation in
-/home/tunde/Documents/Storefront/src/controllers/category.controller.ts:79:44
-
-  76 
-  77 logger.info(`Fetching category with ID ${id}...`);
-  78 
-→ 79 const category = await prisma.category.findUnique({
-       where: {
-     +   id: Int
-       },
-       include: {
-         products: true
-       }
-     })
-
-Argument `id` is missing.
-[2025-05-07T10:14:22.769Z] INFO: GET /api/categories/get-all
-[2025-05-07T10:14:22.777Z] INFO: Fetched 4 categories
-[2025-05-07T10:15:02.619Z] INFO: DELETE /api/categories/5
-[2025-05-07T10:15:02.623Z] INFO: Deleting category with ID 5...
-[2025-05-07T10:15:02.636Z] INFO: Category deleted: ID 5
-[2025-05-07T10:15:18.384Z] INFO: GET /api/categories/get-all
-[2025-05-07T10:15:18.386Z] INFO: Fetched 3 categories
-[2025-05-07T10:19:17.528Z] INFO: GET /api/categories/1
-[2025-05-07T10:19:17.529Z] INFO: Fetching category with ID 1...
-[2025-05-07T10:19:17.548Z] INFO: Fetched category: Books (ID: 1)
-[2025-05-07T10:24:25.082Z] INFO: GET /api/products/1
-[2025-05-07T10:24:48.204Z] INFO: GET /api/products/9
-[2025-05-07T10:25:31.248Z] INFO: GET /api/products/6
-[2025-05-07T10:26:18.208Z] INFO: GET /api/products/6
-[2025-05-07T10:28:26.645Z] INFO: POST /api/products/create-product
-[2025-05-07T10:28:37.404Z] INFO: POST /api/products/create-product
-[2025-05-07T10:29:10.393Z] INFO: POST /api/auth/register
-[2025-05-07T10:30:51.823Z] INFO: POST /api/auth/register
-[2025-05-07T10:31:06.777Z] INFO: POST /api/auth/register
-[2025-05-07T10:31:19.260Z] INFO: POST /api/auth/login
-[2025-05-07T10:31:31.159Z] INFO: POST /api/products/create-product
-[2025-05-07T10:39:13.576Z] INFO: POST /api/auth/register
-[2025-05-07T10:39:14.700Z] INFO: POST /api/auth/register
-[2025-05-07T10:39:15.824Z] INFO: POST /api/auth/register
-[2025-05-07T10:39:16.754Z] INFO: POST /api/auth/register
-[2025-05-07T10:39:17.709Z] INFO: POST /api/auth/register
-[2025-05-07T10:39:18.639Z] INFO: POST /api/auth/register
+[2025-05-07T12:27:26.103Z] INFO: POST /api/auth/register
+[2025-05-07T12:27:56.755Z] INFO: POST /api/auth/login
+[2025-05-07T12:28:19.574Z] INFO: GET /api/categories/1
+[2025-05-07T12:28:19.575Z] INFO: Fetching category with ID 1...
+[2025-05-07T12:28:22.617Z] INFO: Fetched category: Clothing (ID: 1)
+[2025-05-07T12:28:59.131Z] INFO: POST /api/auth/register
+[2025-05-07T12:29:16.888Z] INFO: POST /api/auth/register

@@ -1,13 +1,11 @@
-// This file defines your database schema for Prisma ORM
-
 generator client {
   provider = "prisma-client-js"
   output   = "./node_modules/@prisma/client"
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL") // example: mysql://root:password@localhost:3306/storefront
+  provider = "postgresql"  // Set this to PostgreSQL instead of MySQL
+  url      = env("DATABASE_URL") // This will use the DATABASE_URL from your .env
 }
 
 enum Role {
